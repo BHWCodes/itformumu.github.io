@@ -77,7 +77,7 @@
           // 第一页
           element1.innerHTML = '';
           ityped.init('#element1', {
-            strings: ['Hi, 木木', 'Nice to meet you!', 'you may ask,', '"what\'s this?"', 'HHHHH :P', 'Just look!'],
+            strings: ['Hi, 木木', 'Nice to meet you!', 'you may ask,', '"what\'s this?"', 'HHHHH :P', 'Just watch!'],
             typeSpeed: 200,
             backSpeed: 90,
             startDelay: 200,
@@ -101,7 +101,7 @@
             $('#wrap2').removeClass('hide');
             setTimeout(function () {
               ityped.init('#element2', {
-                strings: ['You are a pretty girl', 'So coooool', 'I hope we can be friends.'],
+                strings: ['You are a pretty girl.', 'So coooool.', 'I hope we can be friends.'],
                 typeSpeed: 200,
                 backSpeed: 90,
                 startDelay: 200,
@@ -124,11 +124,13 @@
             // 去除轮询
             clearInterval(interval4);
             // 展示第四页内容
-            $('#wrap4').removeClass('hide');
+            setTimeout(function(){
+              $('#wrap4').removeClass('hide');
+            }, 500);
             setTimeout(function () {
               ityped.init('#element4', {
-                strings: ['A friend is one of ', 'the nicest things ', ' i can have,', 'and one of ', 'the best things i can be.'],
-                typeSpeed: 150,
+                strings: ['A friend is one of the nicest things ', ' i can have,', 'and one of the best things', 'i can be.'],
+                typeSpeed: 180,
                 backSpeed: 90,
                 startDelay: 200,
                 loop: false,

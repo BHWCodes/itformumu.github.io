@@ -271,52 +271,20 @@ body {
 
 /* 第一页 */
 #wrap1,
-#wrap7,
-#wrap3 {
+#wrap7 {
   position: absolute;
   top: 40%;
   right: 10%;
 }
 
 /* 第二页 */
-#wrap2 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  max-width: 860px;
-}
-
-#wrap2 .bg {
-  position: absolute;
-  right: 0;
-}
-
-
-/* 第四页 */
+#wrap2,
 #wrap4,
-#wrap6 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  max-width: 860px;
-}
-
-#wrap4 .bg,
-#wrap6 .bg {
-  position: absolute;
-  right: 0;
-}
-
-
-/* 第五页 */
 #wrap5 {
   position: absolute;
   top: 10%;
-  left: 10%;
-  width: 85%;
-  max-width: 1000px;
+  right: 10%;
 }
+
 
 

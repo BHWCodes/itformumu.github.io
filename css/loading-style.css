@@ -243,7 +243,8 @@ body {
   position: absolute;
   right: 1rem;
   height: 20px;
-  width: 300px;
+  width: 30rem;
+  min-width: 300px;
   line-height: 20px;
 }
 

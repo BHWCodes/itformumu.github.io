@@ -96,85 +96,85 @@
                 }, 1890);
               }
             });
-
-            // 第二页
-            var interval2 = setInterval(function () {
-              if (flag2) {
-                // 去除轮询
-                clearInterval(interval2);
-                // 展示第二页内容
-                $('#wrap2').removeClass('hide');
-                setTimeout(function () {
-                  ityped.init('#element2', {
-                    strings: ['You are a pretty girl.', 'So coooool.', 'I hope we can be friends.'],
-                    typeSpeed: 200,
-                    backSpeed: 90,
-                    startDelay: 200,
-                    loop: false,
-                    showCursor: false,
-                    onFinished: function () {
-                      setTimeout(function () {
-                        $('#wrap2').addClass('animated fadeOut');
-                        flag4 = true;
-                      }, 3000);
-                    }
-                  });
-                }, 1000);
-              }
-            }, 1000);
-
-            // 第四页
-            var interval4 = setInterval(function () {
-              if (flag4) {
-                // 去除轮询
-                clearInterval(interval4);
-                // 展示第四页内容
-                setTimeout(function () {
-                  $('#wrap4').removeClass('hide');
-                }, 500);
-                setTimeout(function () {
-                  ityped.init('#element4', {
-                    strings: ['A friend is one of the nicest things ', ' i can have,',
-                      'and one of the best things', 'i can be.'
-                    ],
-                    typeSpeed: 180,
-                    backSpeed: 90,
-                    startDelay: 200,
-                    loop: false,
-                    showCursor: false,
-                    onFinished: function () {
-                      setTimeout(function () {
-                        $('#wrap4').addClass('animated fadeOut');
-                        flag7 = true;
-                      }, 3500);
-                    }
-                  });
-                }, 1000);
-              }
-            }, 1000);
-
-            // 第七页
-            var interval7 = setInterval(function () {
-              if (flag7) {
-                // 去除轮询
-                clearInterval(interval7);
-                // 展示第二页内容
-                $('#wrap7').removeClass('hide');
-                setTimeout(function () {
-                  ityped.init('#element7', {
-                    strings: ['send sincere blessing ', 'and warm greeting', 'to my birthday girl.',
-                      'happy birthday, 木木'
-                    ],
-                    typeSpeed: 200,
-                    backSpeed: 100,
-                    startDelay: 200,
-                    loop: false,
-                    showCursor: false
-                  });
-                }, 1000);
-              }
-            }, 1000);
           }
+
+          // 第二页
+          var interval2 = setInterval(function () {
+            if (flag2) {
+              // 去除轮询
+              clearInterval(interval2);
+              // 展示第二页内容
+              $('#wrap2').removeClass('hide');
+              setTimeout(function () {
+                ityped.init('#element2', {
+                  strings: ['You are a pretty girl.', 'So coooool.', 'I hope we can be friends.'],
+                  typeSpeed: 200,
+                  backSpeed: 90,
+                  startDelay: 200,
+                  loop: false,
+                  showCursor: false,
+                  onFinished: function () {
+                    setTimeout(function () {
+                      $('#wrap2').addClass('animated fadeOut');
+                      flag4 = true;
+                    }, 3000);
+                  }
+                });
+              }, 1000);
+            }
+          }, 1000);
+
+          // 第四页
+          var interval4 = setInterval(function () {
+            if (flag4) {
+              // 去除轮询
+              clearInterval(interval4);
+              // 展示第四页内容
+              setTimeout(function () {
+                $('#wrap4').removeClass('hide');
+              }, 500);
+              setTimeout(function () {
+                ityped.init('#element4', {
+                  strings: ['A friend is one of the nicest things ', ' i can have,',
+                    'and one of the best things', 'i can be.'
+                  ],
+                  typeSpeed: 180,
+                  backSpeed: 90,
+                  startDelay: 200,
+                  loop: false,
+                  showCursor: false,
+                  onFinished: function () {
+                    setTimeout(function () {
+                      $('#wrap4').addClass('animated fadeOut');
+                      flag7 = true;
+                    }, 3500);
+                  }
+                });
+              }, 1000);
+            }
+          }, 1000);
+
+          // 第七页
+          var interval7 = setInterval(function () {
+            if (flag7) {
+              // 去除轮询
+              clearInterval(interval7);
+              // 展示第二页内容
+              $('#wrap7').removeClass('hide');
+              setTimeout(function () {
+                ityped.init('#element7', {
+                  strings: ['send sincere blessing ', 'and warm greeting', 'to my birthday girl.',
+                    'happy birthday, 木木'
+                  ],
+                  typeSpeed: 200,
+                  backSpeed: 100,
+                  startDelay: 200,
+                  loop: false,
+                  showCursor: false
+                });
+              }, 1000);
+            }
+          }, 1000);
         }
       }
     }

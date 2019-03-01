@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-  <title>A Birthday Gift For 木木</title>
+  <title>itforshow</title>
   <link rel="stylesheet" href="css/loading-style.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" media="screen" type="text/css" />
 </head>
@@ -28,30 +28,6 @@
     </div>
   </div>
 
-  <div id="wrap4" class="hide">
-    <div class="bg">
-      <div class="loading">
-        <span id="element4"></span>
-      </div>
-    </div>
-  </div>
-
-  <div id="wrap5" class="hide">
-    <div class="bg">
-      <div class="loading">
-        <span id="element5"></span>
-      </div>
-    </div>
-  </div>
-
-  <div id="wrap7" class="hide">
-    <div class="bg">
-      <div class="loading">
-        <span id="element7"></span>
-      </div>
-    </div>
-  </div>
-
   <script src="https://unpkg.com/ityped@1.0.3"></script>
   <script src="jquery.js"></script>
   <script>
@@ -64,12 +40,7 @@
           var audio = document.getElementById("bgMusic");
           var element1 = document.getElementById("element1");
 
-          var flag2 = false,
-            flag3 = false,
-            flag4 = false,
-            flag5 = false,
-            flag6 = false,
-            flag7 = false;
+          var flag2 = false;
 
           if (audio.paused) {
 
@@ -81,9 +52,7 @@
             // 第一页
             element1.innerHTML = '';
             ityped.init('#element1', {
-              strings: ['Hi, 木木', 'Nice to meet you!', 'you may ask,', '"what\'s this?"', 'HHHHH :P',
-                'Just watch!'
-              ],
+              strings: ['Hi', 'Nice to meet you!'],
               typeSpeed: 200,
               backSpeed: 90,
               startDelay: 200,
@@ -101,32 +70,6 @@
           // 第二页
           var interval2 = setInterval(function () {
             if (flag2) {
-              // 去除轮询
-              clearInterval(interval2);
-              // 展示第二页内容
-              $('#wrap2').removeClass('hide');
-              setTimeout(function () {
-                ityped.init('#element2', {
-                  strings: ['You are a pretty girl.', 'So coooool.', 'I hope we can be friends.'],
-                  typeSpeed: 200,
-                  backSpeed: 90,
-                  startDelay: 200,
-                  loop: false,
-                  showCursor: false,
-                  onFinished: function () {
-                    setTimeout(function () {
-                      $('#wrap2').addClass('animated fadeOut');
-                      flag4 = true;
-                    }, 3000);
-                  }
-                });
-              }, 1000);
-            }
-          }, 1000);
-
-          // 第四页
-          var interval4 = setInterval(function () {
-            if (flag4) {
               // 去除轮询
               clearInterval(interval4);
               // 展示第四页内容
@@ -149,28 +92,6 @@
                       flag7 = true;
                     }, 3500);
                   }
-                });
-              }, 1000);
-            }
-          }, 1000);
-
-          // 第七页
-          var interval7 = setInterval(function () {
-            if (flag7) {
-              // 去除轮询
-              clearInterval(interval7);
-              // 展示第二页内容
-              $('#wrap7').removeClass('hide');
-              setTimeout(function () {
-                ityped.init('#element7', {
-                  strings: ['send sincere blessing ', 'and warm greeting', 'to my birthday girl.',
-                    'happy birthday, 木木'
-                  ],
-                  typeSpeed: 200,
-                  backSpeed: 100,
-                  startDelay: 200,
-                  loop: false,
-                  showCursor: false
                 });
               }, 1000);
             }

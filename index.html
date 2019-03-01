@@ -72,12 +72,12 @@
             if (flag2) {
               // 去除轮询
               clearInterval(interval4);
-              // 展示第四页内容
+              // 展示第二页内容
               setTimeout(function () {
-                $('#wrap4').removeClass('hide');
+                $('#wrap2').removeClass('hide');
               }, 500);
               setTimeout(function () {
-                ityped.init('#element4', {
+                ityped.init('#element2', {
                   strings: ['A friend is one of the nicest things i can have,',
                     'and one of the best things i can be.'
                   ],
@@ -88,8 +88,7 @@
                   showCursor: false,
                   onFinished: function () {
                     setTimeout(function () {
-                      $('#wrap4').addClass('animated fadeOut');
-                      flag7 = true;
+                      $('#wrap2').addClass('animated fadeOut');
                     }, 3500);
                   }
                 });
